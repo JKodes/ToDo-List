@@ -11,6 +11,11 @@ while(answer !== 'quit' && answer !== 'q'){
         const addOnList = prompt("What would you like to add?")
         todos.push(addOnList)
         console.log(`${addOnList} new task added!`)
+    }else if(answer === 'delete'){
+        const deleteIndex = prompt("Enter the index you want to remove")
+        todos.splice(deleteIndex, 1)
+        console.log(deleteIndex)
+
     }
 
     
